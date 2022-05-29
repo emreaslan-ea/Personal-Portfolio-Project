@@ -183,20 +183,20 @@ p {
 #services{
     margin-top: 12rem;
 }
-#services .service-heading .heading-services{
-    font-size: 6rem;
+.topic-heading .main-heading{
+    font-size: 5vw;
     letter-spacing: 7px;
     font-weight: 600;
     text-align: center;
     position: relative;
 }
-#services .service-heading .heading-services::before{
-    content: "SERVICES";
+.topic-heading .main-heading::before{
+    content: attr(data-outline);
     position: absolute;
     left: 2%;
     top: -20%;
     width: 100%;
-    font-size: 6rem;
+    font-size: 5vw;
     letter-spacing: 7px;
     font-weight: 600;
     text-align: center;
@@ -260,6 +260,12 @@ p {
     #services .skills .service{
         margin-bottom: 3em;
     }
+    .topic-heading .main-heading{
+        font-size: 10vw;
+    }
+    .topic-heading .main-heading::before{
+        font-size: 10vw;
+    }
     #services .skills .icon-service{
         margin: 0 auto;
     }
@@ -273,5 +279,102 @@ p {
     }
     #services .skills .service-seo{
         background-color: #cbbef093;
+    }
+}
+
+/* TESTIMONIAL SECTION */
+#testimonial{
+    margin-top: 22em;
+}
+#testimonial .topic-heading{
+    margin-bottom: 9em;
+}
+#testimonial .all-items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}    
+#testimonial .all-items .item {
+    padding: 2rem;
+    margin: 0 2em 0 2em;
+    position: relative;
+}
+#testimonial .all-items .img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+#testimonial .all-items .img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+#testimonial .all-items .testimonial-heading{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+#testimonial .all-items .testimonial-subheading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-gray);
+}
+
+#testimonial .all-items .testimonial-icon{
+    max-width: 25px;
+    margin: 1.5rem auto;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
+#testimonial .all-items .testimonial-desc p{
+    color: var(--secondary-gray);
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#testimonial .item:nth-of-type(1),
+#testimonial .item:nth-of-type(3) {
+	flex: 3;
+	transform: scale(0.8);
+}
+#testimonial .item:nth-of-type(2) {
+	flex: 4;
+}
+#testimonial .item::after {
+	content: '';
+	position: absolute;
+	height: 120%;
+	width: 100%;
+	/* border: 1px solid var(--primary-color); */
+	left: 0;
+	top: 45px;
+	z-index: -1;
+
+	/* border-radius: 20px 50px 100px 50px; */
+	box-shadow: 0px 0px 20px 0px #4705fc1f;
+}
+
+#testimonial .item:nth-of-type(1)::after,
+#testimonial .item:nth-of-type(3)::after {
+	transform: skew(2deg, 9deg);
+	height: 95%;
+	border-radius: 52px 30px 59px 60px;
+}
+#testimonial .all-items .item:nth-of-type(even)::after {
+	transform: skew(350deg, 354deg);
+    height: 100%;
+	border-radius: 26px 67px 35px 67px;
+}
+@media(max-width: 1000px){
+    #testimonial .all-items{
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #testimonial .topic-heading{
+        margin-bottom: 3em;
+    }
+    #testimonial .all-items .item:nth-of-type(3){
+        margin-top: 3.5em;
     }
 }
