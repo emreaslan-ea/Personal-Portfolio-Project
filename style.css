@@ -378,3 +378,51 @@ p {
         margin-top: 3.5em;
     }
 }
+
+
+/* STATS SECTİON*/
+#stats{
+    margin-top: 25rem;
+}
+
+#stats .stats-items{
+    display: flex;
+    margin-top: 10rem;
+}
+
+#stats .stats-items .stats-item{
+    padding: 2rem;
+    width: 33%;
+}
+#stats .stats-items .stats-item .number{
+    font-size: 6rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+#stats .stats-items .stats-item .item-heading{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+#stats .stats-items .stats-item .item-desc{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.75rem;
+}
+#stats .stats-items .stats-item:nth-child(1){
+    background-color: rgba(255, 238, 0, 0.322);
+}
+#stats .stats-items .stats-item:nth-child(2){
+    background-color: rgba(0, 255, 115, 0.329);
+}
+#stats .stats-items .stats-item:nth-child(3){
+    background-color: #4705fc50;
+}
+@media(max-width:768px){
+    #stats .stats-items{
+       flex-direction: column;
+    }
+    #stats .stats-items .stats-item{
+        padding: 2rem;
+        width: 100%;
+    }
+}
