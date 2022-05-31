@@ -28,6 +28,12 @@ a {
 	color: black;
 	text-decoration: none;
 }
+.button-s{
+    display: inline-block;
+    padding: 0.6em 1.6em;
+    border: 1px solid black;
+    border-radius: 50px;
+}
 
 .container {
 	width: 90%;
@@ -423,6 +429,112 @@ p {
     }
     #stats .stats-items .stats-item{
         padding: 2rem;
+        width: 100%;
+    }
+}
+
+/* ABOUT Section*/
+#about{
+    margin-top: 22em;
+    margin-bottom: 50em;
+}
+#about .about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+#about .about-me .my-card{
+    padding: 4rem;
+    text-align: center;
+    box-shadow: 0px 0px 75px #4705fc33;
+    min-height: 400px;
+    border-radius: 15px;
+    max-width: 300px;
+}
+#about .about-me .my-card .card-img{
+    width: 70px;
+    height: 70px;
+    margin: 1em auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#about .about-me .my-card .card-text{
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding-bottom: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#about .about-me .my-card .card-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#about .about-me .my-card .card-subheading{
+    font-family: 'Segoe UI', Tahoma,Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-gray);
+}
+
+#about .about-me .my-expertise{
+    margin-left: 30px;
+}
+
+#about .about-me .my-expertise .my-expertise-heading{
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+}
+#about .about-me .my-expertise .my-expertise-subheading{
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+}
+
+#about .about-me .my-expertise .my-expertise-desc{
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    padding-bottom: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#about .about-me .my-expertise .btn-download-cv{
+    font-size: 1.8rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-right: 1.75em;
+}
+
+#about .about-me .my-expertise .btn-hire-me{
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+@media(max-width:768px){
+    #about .about-me{
+        flex-direction: column-reverse;
+    }
+    #about .about-me .my-expertise{
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 5em;
+    }
+    #about .about-me .my-card{
+        min-height: 0;
+        max-width: 100%;
+        padding: 1.5em;
+    }
+    #about .about-me .my-expertise .btn-download-cv{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    #about .about-me .my-expertise .btn-hire-me{
         width: 100%;
     }
 }
