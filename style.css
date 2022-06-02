@@ -28,6 +28,9 @@ a {
 	color: black;
 	text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 .button-s{
     display: inline-block;
     padding: 0.6em 1.6em;
@@ -541,6 +544,7 @@ p {
 /* PROJECTS SECTION */
 #projects{
     margin-top: 22em;
+    margin-bottom: 18rem;
 }
 #projects .projects{
     margin: 3em 0;
@@ -674,5 +678,122 @@ p {
     #projects .projects .item .right .btn-preview{
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* FOOTER START */
+footer{
+    background-color: #311580;
+}
+#footer{
+    display: flex;
+    color: #fff;
+    padding-top: 10em;
+    padding-bottom: 6em;
+}
+footer h1{
+    letter-spacing: 1.25px;
+    font-size: 2rem;
+    line-height: 1.5em;
+    margin-bottom: 1.4em;
+}
+footer .info{
+    flex: 3;
+    padding-right: 5em;
+}
+footer .info p{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding-bottom: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .info .logo img{
+    width: 200px;
+}
+footer .important-links{
+    flex: 2;
+    margin-right: 2em;
+}
+
+footer .contact-info{
+    flex: 2;
+    margin-right: 2em;
+}
+footer .contact-info ul li a,
+footer .important-links ul li a{
+    padding: 0.3em 0;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #fff;  
+    margin-bottom: 0.1em;
+}
+footer .contact-info ul li a:hover,
+footer .important-links ul li a:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding-left: 7px;
+}
+footer .social-links{
+    flex: 1;
+}
+
+footer .social-links svg{
+    margin-left: 1em;
+    margin-bottom: 1.2em;
+    width: 40px;
+    fill: white;
+}
+
+#copyright{
+    background-color: #221052;
+    border-top: 1px solid var(--secondary-gray);
+    border-bottom: 1px solid var(--secondary-gray);
+    text-align: center;
+}
+
+#copyright .copyright-text p{
+    color: #fff;
+    padding: 1em 0;
+    margin: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+@media(max-width:768px){
+    #footer{
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        padding-top: 4em;
+    }
+    footer h1{
+        margin-bottom: 0.3em;
+    }
+    footer .info,
+    footer .important-links,
+    footer .contact-info{
+        text-align: center;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 5em;
+    }
+    footer .social-links{
+        width: 100%;
+        text-align: center;
+    }
+    footer .social-links svg{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    footer .social-links ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #copyright .copyright-text p{
+        font-size: 1.2rem;
     }
 }
