@@ -13,7 +13,7 @@
     <title>Emre Aslan</title>
 </head>
 <body>
-    <header id="navigation" class="container">
+    <header id="navigation">
         <div class="nav-icon">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
@@ -21,28 +21,45 @@
         </div>
     </header>
 
+    <section id="nav-content">
+        <div class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+
+        
+        <div class="nav-item">
+            <div class="menu-heading topic-heading">
+                <h2 class="heading-menu main-heading" data-outline="MENU">MENU</h2>
+            </div>
+            <ul>
+                <li><a data-text="HOME" href="#hero">Home</a></li>
+                <li><a data-text="ABOUT" href="#about">About</a></li>
+                <li><a data-text="PROJECTS" href="#projects">Projects</a></li>
+                <li><a data-text="TESTIMONIAL" href="#testimonial">Testimonial</a></li>
+                <li><a data-text="CONTACT" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
     <section id="hero" class="container">
 
         <div class="left">
             <div><p class="spell">I'M EMRE</p></div>
-            <div class="heading">
-                
+            <div class="heading">             
                     <div class="wrapper slogan"><span>Pixels</span></div>
                     <div class="wrapper slogan"><span>with</span></div>
-                    <div class="wrapper slogan"><span>purpose</span></div>
-                
+                    <div class="wrapper slogan"><span>purpose</span></div>             
             </div>
             <div><p class="desc">I work with companies and agencies around the world, building Web sites and application UIs with strong focus on responsive design, accessibility, performance,</p></div>
             <div class="button">
                 <a href="#">See My Works</a>
             </div>
         </div>
-
         <div class="right">
             <img src="/img/profil.jpg" alt="profil-photo">
         </div>
-
-
     </section>
 
 
@@ -288,5 +305,9 @@
             <p>© Copyright 2022 Emre. All right Reserved</p>
         </div>
     </section>
+
+
+
+    <script src="/main.js"></script>
 </body>
 </html>
